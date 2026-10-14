@@ -1,0 +1,51 @@
+# ============================================================================
+#  ASA AI — .gitignore anti-fuite pour le dépôt public GitHub
+#  Objectif : ne JAMAIS publier le code source, les logs, les sauvegardes,
+#  les rapports clients ni les secrets. Seuls le README et les binaires de
+#  Release (gérés hors Git, via "Releases") sont visibles.
+# ============================================================================
+
+# --- Code source : jamais publié ---
+*.ps1
+*.psm1
+*.sh
+*.py
+
+# --- Secrets et config serveur ---
+config.json
+*.lic
+*.key
+*.pem
+.env
+
+# --- Sauvegardes et versions de travail ---
+*.bak
+*.bak-*
+*.backup
+*.consol-*
+*.httpsfix-*
+*.recovery-*
+old/
+modules/
+
+# --- Journaux ---
+*.log
+
+# --- Rapports et données clients (confidentiel) ---
+Rapports/
+Reports/
+Document d'ingenierie/
+XYONE/
+intake-*.json
+status-*.json
+*-findings.json
+
+# --- Données serveur de licences ---
+data/
+licenses.json
+
+# --- Divers ---
+Thumbs.db
+*.tmp
+dist/
+node_modules/

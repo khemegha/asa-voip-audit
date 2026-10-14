@@ -7,6 +7,27 @@
 
 ---
 
+## Aperçu
+
+**Une interface claire — on renseigne le périmètre, on lance, on obtient un rapport professionnel.**
+
+### 1. Saisie de l'engagement
+Opérateur, périmètre autorisé (ROE), cibles IPBX / SBC / terminaux, VLAN voix, sous-réseaux, transport SIP (UDP / TCP / TLS), inventaire des terminaux.
+
+![Interface de saisie de l'audit VoIP ASA AI](docs/interface.png)
+
+### 2. Exécution en direct
+Les 24 tests se déroulent sous vos yeux (découverte, énumération SIP, authentification, SBC, RTP, DoS…), avec journal en temps réel.
+
+![Exécution de l'audit et génération du rapport](docs/execution.png)
+
+### 3. Rapport branded prêt à livrer
+Page de garde premium, sommaire paginé, constats classés par sévérité, menace encourue et remédiation priorisée par cible — en HTML et Word (.docx).
+
+![Page de garde du rapport d'audit](docs/rapport-couverture.png)
+
+---
+
 ## Licence d'utilisation
 
 L'outil est **gratuit à l'essai, avec une limite de 5 scans**. Au-delà, une demande de déblocage s'effectue auprès de **contact@asa-ai.fr**.

@@ -1,71 +1,76 @@
-# ASA AI — Outil d'audit de sécurité VoIP / SIP
+**English** · [Français](README.fr.md)
 
-Évaluation de sécurité non intrusive des infrastructures VoIP (IPBX, SIP, téléphones IP, SBC, softphones) selon la méthodologie **NIST SP 800-115**. Génère un rapport professionnel (HTML / PDF / DOCX) avec, pour chaque constat, la menace encourue et une remédiation priorisée par cible.
+# ASA AI — VoIP / SIP Security Audit Tool
 
-> Édité par **ASA AI** — sécurité des services VoIP.
-> Contact & licences : **contact@asa-ai.fr** · [www.asa-ai.fr](https://www.asa-ai.fr)
+Non-intrusive security assessment of VoIP infrastructures (IPBX, SIP, IP phones, SBC, softphones) following the **NIST SP 800-115** methodology. Generates a professional report (HTML / PDF / DOCX) with, for each finding, the associated threat and a remediation prioritized by target.
 
----
-
-## Aperçu
-
-**Une interface claire — on renseigne le périmètre, on lance, on obtient un rapport professionnel.**
-
-### 1. Saisie de l'engagement
-Opérateur, périmètre autorisé (ROE), cibles IPBX / SBC / terminaux, VLAN voix, sous-réseaux, transport SIP (UDP / TCP / TLS), inventaire des terminaux.
-
-![Interface de saisie de l'audit VoIP ASA AI](docs/interface.png)
-
-### 2. Exécution en direct
-Les 24 tests se déroulent sous vos yeux (découverte, énumération SIP, authentification, SBC, RTP, DoS…), avec journal en temps réel.
-
-![Exécution de l'audit et génération du rapport](docs/execution.png)
-
-### 3. Rapport branded prêt à livrer
-Page de garde premium, sommaire paginé, constats classés par sévérité, menace encourue et remédiation priorisée par cible — en HTML et Word (.docx).
-
-![Page de garde du rapport d'audit](docs/rapport-couverture.png)
+> Published by **ASA AI** — VoIP service security.
+> Contact & licenses: **<contact@asa-ai.fr>** · [www.asa-ai.fr](https://www.asa-ai.fr)
 
 ---
 
-## Licence d'utilisation
+## Preview
 
-L'outil est **gratuit à l'essai, avec une limite de 5 scans**. Au-delà, une demande de déblocage s'effectue auprès de **contact@asa-ai.fr**.
+**A clear interface — define the scope, launch, get a professional report.**
 
-### Obtenir un accès
+### 1. Engagement setup
 
-1. Inscrivez-vous sur **[www.asa-ai.fr](https://www.asa-ai.fr)** (e-mail **professionnel** + téléphone requis).
-2. Votre demande est validée manuellement par nos équipes.
-3. Vous recevez votre **clé de licence** par e-mail.
-4. Saisissez-la au premier lancement de l'outil.
+Operator, authorized scope (ROE), IPBX / SBC / endpoint targets, voice VLAN, subnets, SIP transport (UDP / TCP / TLS), endpoint inventory.
 
-Chaque clé autorise **5 scans** et est liée à un poste. Pour un quota supérieur : **contact@asa-ai.fr**.
+![ASA AI VoIP audit input screen](docs/en/interface.png)
+
+### 2. Live execution
+
+The 24 tests run before your eyes (discovery, SIP enumeration, authentication, SBC, RTP, DoS…), with a real-time log.
+
+![Audit execution and report generation](docs/en/execution.png)
+
+### 3. Branded, delivery-ready report
+
+Premium cover page, paginated table of contents, findings ranked by severity, associated threat and remediation prioritized by target — in HTML and Word (.docx).
+
+![Audit report cover page](docs/en/report-cover.png)
+
+---
+
+## License
+
+The tool is **free to try, with a limit of 5 scans**. Beyond that, unlock requests are handled by **<contact@asa-ai.fr>**.
+
+### Getting access
+
+1. Register on **[www.asa-ai.fr](https://www.asa-ai.fr)** (**business** e-mail and phone number required).
+2. Your request is manually validated by our team.
+3. You receive your **license key** by e-mail.
+4. Enter it the first time you launch the tool.
+
+Each key allows **5 scans** and is bound to one workstation. For a higher quota: **<contact@asa-ai.fr>**.
 
 ---
 
 ## Installation
 
-1. Téléchargez la dernière **[Release](../../releases)** (`ASA-VoIPAudit-x.y.z.zip`).
-2. Décompressez dans un dossier de votre choix.
-3. Lancez **`ASA-VoIPAudit.exe`**.
-4. Le portail s'ouvre sur `http://127.0.0.1:8899/` (strictement local).
+1. Download the latest **[Release](https://github.com/khemegha/asa-voip-audit/releases)** (`ASA-VoIPAudit-x.y.z.zip`).
+2. Unzip it into a folder of your choice.
+3. Run **`ASA-VoIPAudit.exe`**.
+4. The portal opens at `http://127.0.0.1:8899/` (local only).
 
-### Prérequis
+### Requirements
 
-- Windows 10/11 ou Windows Server, 64 bits.
-- Poste raccordé au LAN VoIP à auditer.
-- **Autorisation écrite préalable** du propriétaire des systèmes cibles (Rules of Engagement).
+- Windows 10/11 or Windows Server, 64-bit.
+- Workstation connected to the VoIP LAN to be audited.
+- **Prior written authorization** from the owner of the target systems (Rules of Engagement).
 
 ---
 
-## Cadre légal
+## Legal notice
 
-L'audit de systèmes tiers **sans autorisation écrite est illégal**. En utilisant cet outil, vous certifiez disposer d'un mandat explicite (Rules of Engagement) sur le périmètre audité. ASA AI décline toute responsabilité en cas d'usage non autorisé.
+Auditing third-party systems **without written authorization is illegal**. By using this tool, you certify that you hold an explicit mandate (Rules of Engagement) for the audited scope. ASA AI accepts no liability for unauthorized use.
 
 ---
 
 ## Support
 
-**contact@asa-ai.fr** — déblocage de quota, questions, prestations d'audit accompagné.
+**<contact@asa-ai.fr>** — quota unlock, questions, assisted audit services.
 
-© ASA AI. Tous droits réservés. Le code source n'est pas distribué.
+© ASA AI. All rights reserved. Source code is not distributed.
